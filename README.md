@@ -1,3 +1,7 @@
+A simple movie watch-list built in Next.js using TypeScript, Tailwind and Shadcn.
+
+Using search functionality, dynamic routing, SSR and Dark Mode functionality to play around.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
