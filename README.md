@@ -1,4 +1,4 @@
-## A simple movie watch-list built in Next.js using TypeScript, Tailwind and Shadcn.
+A simple movie watch-list built in Next.js using TypeScript, Tailwind and Shadcn.
 
 Using search functionality, dynamic routing, SSR and Dark Mode functionality to play around.
 
