@@ -16,11 +16,11 @@ function MovieList() {
 			});
 	}, []);
 	return (
-		<>
+		<div className="grid lg:grid-cols-3 mx-auto w-full gap-10 lg:max-w-[850px]">
 			{movies.map((movieCard) => (
 				<MovieItem movie={movieCard} />
 			))}
-		</>
+		</div>
 	);
 }
 
