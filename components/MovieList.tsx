@@ -1,5 +1,6 @@
 import { cn } from "@/lib/utils";
 import { Movie } from "@/typings";
+import Image from "next/image";
 
 type MovieItemProps = {
 	title?: string;
@@ -46,9 +47,11 @@ function MovieList({ title, movies, isVertical }: MovieItemProps) {
 												isVertical && "hidden"
 											)}
 										></div>
-										<img
+										<Image
 											src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
 											alt={movie.title}
+											width={500}
+											height={750}
 											className={cn(
 												"movie-image rounded-lg absolute w-full h-full object-cover top-0 right-0 left-0 bottom-0",
 												isVertical &&
