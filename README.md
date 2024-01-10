@@ -24,7 +24,7 @@ pnpm dev
 bun dev
 ```
 
-#### To list movies, you need to create your own .env.local file on the project root containing your API Read Access Token, like this:
+#### To list movies, you need to create your own .env.local (view .env.example file) file on the project root containing your API Read Access Token, like this:
 
 ```
 TMDB_API_KEY="YOUR_API_READ_ACCESS_TOKEN"
