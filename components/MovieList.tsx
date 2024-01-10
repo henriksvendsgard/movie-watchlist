@@ -50,8 +50,8 @@ function MovieList({ title, movies, isVertical }: MovieItemProps) {
 										<Image
 											src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
 											alt={movie.title}
-											width={500}
-											height={750}
+											width={1920}
+											height={1080}
 											className={cn(
 												"movie-image rounded-lg absolute w-full h-full object-cover top-0 right-0 left-0 bottom-0",
 												isVertical &&
