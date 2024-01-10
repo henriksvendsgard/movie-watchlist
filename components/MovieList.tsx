@@ -18,8 +18,8 @@ function MovieList({ title, movies, isVertical }: MovieItemProps) {
 				)}
 				<div
 					className={cn(
-						"gap-10 flex flex-row overflow-y-hidden overflow-x-scroll scrollbar-hide p-2",
-						isVertical && "flex-col"
+						"gap-10 flex flex-row overflow-y-hidden overflow-x-scroll p-2",
+						isVertical && "flex-col overflow-x-hidden"
 					)}
 				>
 					{movies.map(
@@ -30,14 +30,14 @@ function MovieList({ title, movies, isVertical }: MovieItemProps) {
 									className={cn(
 										"flex group hover:scale-105 transition ease-out cursor-pointer h-56 min-w-96 rounded-lg relative p-4",
 										isVertical &&
-											"w-full mx-auto min-w-0 h-[unset]"
+											"w-full mx-auto min-w-0 h-[unset] hover:scale-[102%]"
 									)}
 								>
 									<div
 										className={cn(
 											"flex flex-col",
 											isVertical &&
-												"lg:flex-row left-0 gap-10 w-full lg:w-fit"
+												"lg:flex-row gap-10 w-full lg:w-fit"
 										)}
 									>
 										<div
