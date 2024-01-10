@@ -24,6 +24,12 @@ pnpm dev
 bun dev
 ```
 
+#### To list movies, you need to create your own .env.local file on the project root containing your API Read Access Token, like this:
+
+```
+TMDB_API_KEY="YOUR_API_READ_ACCESS_TOKEN"
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
