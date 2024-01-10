@@ -1,15 +1,22 @@
 import MovieList from "@/components/MovieList";
+import {
+	getPopularMovies,
+	getTopRatedMovies,
+	getUpcomingMovies,
+} from "@/lib/getMovies";
 
-export default function Home() {
+export default async function Home() {
+	const upcomingMovies = await getUpcomingMovies();
+	const topRatedMovies = await getTopRatedMovies();
+	const popularMovies = await getPopularMovies();
+
 	return (
 		<main className="flex min-h-screen flex-col items-center p-6 md:p-10">
-			<div className="w-full lg:max-w-[850px]">
-				<h1 className="text-xl font-bold w-full mb-10 mt-20">
-					Movie Watch List
-				</h1>
-			</div>
+			<div className="w-full"></div>
 			<section className="movie-list w-full h-full">
-				<MovieList />
+				<MovieList movies={upcomingMovies} title="Upcoming" />
+				<MovieList movies={topRatedMovies} title="Top Rated" />
+				<MovieList movies={popularMovies} title="Popular" />
 			</section>
 		</main>
 	);

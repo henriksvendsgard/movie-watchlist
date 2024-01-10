@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ModeToggle } from "./ModeToggle";
-import { Input } from "./ui/input";
+import SearchInput from "./SearchInput";
+import GenreSelector from "./GenreSelector";
 
 function Header() {
 	return (
@@ -26,10 +27,10 @@ function Header() {
 				</svg>
 			</Link>
 			<div className="flex gap-4">
+				{/* Genre dropdown */}
+				<GenreSelector />
 				{/* Search field */}
-				<form>
-					<Input placeholder="Search..." />
-				</form>
+				<SearchInput />
 				<div>
 					<ModeToggle />
 				</div>
